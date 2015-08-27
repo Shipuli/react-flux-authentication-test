@@ -1,0 +1,55 @@
+@import './bootstrap-4.0.0-alpha/scss/bootstrap';
+
+body {
+	background-color: rgba(0,0,0,.05);
+}
+
+html, body, #app, .vertical-align {
+	min-height:100%;
+	min-width:100%;
+}
+
+.vertical-align {
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+}
+
+h1 {
+	text-align:center;
+}
+
+.home-menu {
+	text-align:center;
+}
+
+@mixin border-fix($color){
+	border: 0.0725rem solid $color;
+}
+
+.form-control {
+	@include border-fix(#ccc);
+}
+.btn {
+	@include border-fix(#0275d8);
+}
+
+.container {
+	background-color: #FFF;
+	padding: 1.5em;
+	border-radius:0.25em;
+	@include border-fix(#ccc);
+}
+
+.form-header{
+	margin:.4em 0em .7em 0em;
+}
+
+.nav-link {
+	cursor: pointer;
+}
+
+.help {
+	margin:1em;
+	color:#FF3D3D;
+}
