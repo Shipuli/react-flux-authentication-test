@@ -154,11 +154,17 @@ app.get('/*', function(req,res) {
 		router:routes,
 		location:req.url
 	});
-	router.run(Handler => {
-		let content  = React.renderToString(<Handler />);
-		res.render('index', {content: content});
-	});
-
+	if(!isProduction){
+		router.run(Handler => {
+			let content  = React.renderToString(<Handler />);
+			res.render('index', {content: content});
+		});
+	}else{
+		router.run(Handler => {
+			let content  = React.renderToString(<Handler />);
+			res.render('index', {content: content, production: true});
+		});
+	}
 });
 
 

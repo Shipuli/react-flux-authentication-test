@@ -5,11 +5,12 @@
   "author": "Ville Vainio <www.github.com/Shipuli>",
   "scripts": {
     "start": "babel-node server",
-    "build": "webpack -p --config webpack.production.config.js"
+    "build": "webpack --config webpack.production.config.js -p"
   },
   "main": "src/index.js",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.13.3",
     "cookie-parser": "^1.3.5",
     "express": "~4.0.0",

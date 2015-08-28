@@ -9,7 +9,7 @@ How to run:
  	* Just run `npm start`
 
 2. Production 
-	* `npm build` (compiles build.js to public folder) 
+	* `npm run build` (compiles build.js to public folder) 
 	* Set NODE_ENV to 'production'
 	* run `npm start` 
 
