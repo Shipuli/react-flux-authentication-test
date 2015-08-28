@@ -16,3 +16,4 @@ How to run:
 Note: The app should not be executed in development mode when the production bundled file is in the public folder (it messes up the webpack-dev-server).
 
 Webpack setup is mostly from this great tutorial: http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup
+
